@@ -1,3 +1,6 @@
+2 files
+
+/*
 var fs = require('fs')
 var path = require('path')
 
@@ -7,12 +10,7 @@ var path = require('path')
           console.log(file)
       })
     })
-
-
-
-
-
-/*var fs = require('fs');
+var fs = require('fs');
 var path = require('path');
 
 fs.readdir(process.argv[2], function callback(err, list) {
