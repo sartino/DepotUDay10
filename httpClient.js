@@ -1,15 +1,15 @@
-create 2 files.
-prints a list of files filtered by WindowTimersExtension
-1st arg dir name
-2nd arg ext filter
-module- export 1 function with 3 args:
-	dir name
-	file ext string 
-	callback function 
-if an error, 1st arg will be null 
-2nd will be the data 
-data will be list of files as array 
+var http = require('http');
 
+http.get(process.argv[2], function (response) {
+    response.setEncoding("utf8")
+    response.on("data", console.log)
+    response.on("error", console.error)
+});
+
+//      perform a http get request to a url provided to you
+//      as the first command line argument.
+//      write the string contents of 'each' 'data' event from
+//      the response to a new line on the console.
 /*
 var fs = require('fs')
 var path = require('path')
